@@ -1,0 +1,21 @@
+.footer {
+	height: 55px;
+	background-color: gray;
+	h5 {
+		text-align: center;
+		padding-top: 20px;
+		color: white;
+		a {
+			color: $link-color;
+		}
+	}
+}
+
+.scroll-top {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	img {
+		cursor: pointer;
+	}
+}

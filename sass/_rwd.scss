@@ -1,0 +1,23 @@
+@mixin ipad {
+    @media (max-width: 768px) {
+        @content
+    }
+}
+
+@mixin l-phone {
+    @media (max-width: 568px) {
+        @content
+    }
+}
+
+@mixin m-phone {
+    @media (max-width: 414px) {
+        @content
+    }
+}
+
+@mixin s-phone {
+    @media (max-width: 320px) {
+        @content
+    }
+}
