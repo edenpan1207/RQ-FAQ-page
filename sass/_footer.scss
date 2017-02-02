@@ -17,14 +17,12 @@
 	right: 20px;
 	}
 
-.comment {
+.comment-ico {
 	position: fixed;
 	bottom: 90px;
 	right: 8px;
-	
-	p {
+	span {
+		display: block;
 		font-size: 12px;
-	
-	}
-	
+	}	
 }
