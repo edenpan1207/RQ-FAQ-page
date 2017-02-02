@@ -142,6 +142,5 @@ img {
   position: fixed;
   bottom: 90px;
   right: 8px; }
-  .comment a span {
-    font-size: 12px;
-    display: block; }
+  .comment p {
+    font-size: 12px; }
