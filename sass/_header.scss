@@ -1,39 +1,18 @@
-body {
-	background-color: #D5F5E3;
-}
-
 .wrap {
 	width: 100%;
 }
 
+/* 這段不用理他 */
 .header {
-	background-color: #52BE80;
-	margin-bottom: 20px;
-	h1 {
-		padding-top: 20px;
-		padding-bottom: 20px;
-		font-size: 36px;
-		font-weight: bold;
-	}
+	background-color: #fff;
+	border-bottom: 1px solid gray;
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+	font-size: 36px;
+	font-weight: bold;
 }
 
-.menu {
-	background-color: $menu-color;
-	ul {
-		float: left;
-		li {
-			float: left;
-			a {
-				text-decoration: none;
-				display: block;
-				border-right: 15px solid $menu-color;
-				font-size: 20px;
-				color: #FBFCFC;
-				&:hover {
-					color: $link-color;	
-				}
-			}
-		}
-	}
-}
+
+
 

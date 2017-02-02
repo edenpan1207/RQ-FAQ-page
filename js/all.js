@@ -25,7 +25,7 @@ $(document).ready(function(){
         var connect = $(this).attr('href');
         var position = $(connect).offset().top;
         $('body').animate({
-            scrollTop: position}, 700);
+            scrollTop: position-80}, 700);
     });
 
     // scroll top button show and hide
@@ -39,7 +39,7 @@ $(document).ready(function(){
     });
 
     // scroll to top click
-    $('.scroll-top img').click(function(event) {
+    $('.scroll-top a').click(function(event) {
         event.preventDefault();
         $('html,body').animate({ scrollTop: 0 }, 700);
     });

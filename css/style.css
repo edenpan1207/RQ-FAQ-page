@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
  * RESET --- reset css default style
  * HEADER --- web layout include background and topmenu 
@@ -60,63 +61,62 @@ img {
   padding-bottom: 20px;
   max-width: 960px; }
 
-body {
-  background-color: #D5F5E3; }
-
 .wrap {
   width: 100%; }
 
+/* 這段不用理他 */
 .header {
-  background-color: #52BE80;
-  margin-bottom: 20px; }
-  .header h1 {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 36px;
-    font-weight: bold; }
+  background-color: #fff;
+  border-bottom: 1px solid gray;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  font-size: 36px;
+  font-weight: bold; }
 
-.menu {
-  background-color: #229954; }
-  .menu ul {
+.content {
+  padding-top: 90px; }
+  .content .top-content span {
+    float: left;
+    padding-bottom: 5px; }
+  .content .top-content ul {
     float: left; }
-    .menu ul li {
-      float: left; }
-      .menu ul li a {
-        text-decoration: none;
-        display: block;
-        border-right: 15px solid #229954;
-        font-size: 20px;
-        color: #FBFCFC; }
-        .menu ul li a:hover {
-          color: #F1948A; }
-
-.content h2 {
-  display: inline;
-  font-size: 24px;
-  border-bottom: 5px solid #E74C3C;
-  padding-bottom: 5px; }
-
-.content ul {
-  padding-top: 30px; }
-  .content ul li {
-    border: 2px solid gray;
-    box-shadow: 0px 2px 5px #34495E;
-    line-height: 1.8em;
-    margin-bottom: 15px; }
-    .content ul li h3 {
-      font-size: 24px;
-      background-color: #eee;
-      padding: 20px;
-      cursor: pointer; }
-      .content ul li h3:hover {
-        background-color: #D0D3D4; }
-    .content ul li p {
-      font-size: 18px;
-      background-color: #616A6B;
-      color: white;
-      padding: 20px; }
-      .content ul li p a {
-        color: #F1948A; }
+    .content .top-content ul li {
+      float: left;
+      padding-right: 10px; }
+  .content .top-content h1 {
+    text-align: center;
+    font-size: 42px;
+    letter-spacing: 5px; }
+  @media (max-width: 568px) {
+    .content .chart-content li {
+      padding-bottom: 5px;
+      width: 50%; } }
+  .content h2 {
+    display: inline;
+    font-size: 24px;
+    border-bottom: 5px solid #f05f40;
+    padding-bottom: 5px; }
+  .content .menu-content {
+    padding-top: 30px; }
+    .content .menu-content li {
+      box-shadow: 0px 2px 10px rgba(34, 34, 34, 0.8);
+      line-height: 1.8em;
+      margin-bottom: 20px; }
+      .content .menu-content li h3 {
+        font-size: 24px;
+        background-color: #fff;
+        padding: 20px;
+        cursor: pointer; }
+        .content .menu-content li h3:hover {
+          background-color: rgba(55, 118, 29, 0.1); }
+      .content .menu-content li p {
+        font-size: 18px;
+        background-color: rgba(55, 118, 29, 0.8);
+        color: white;
+        padding: 20px; }
+        .content .menu-content li p a {
+          color: #f69f8c; }
 
 .rotate {
   -webkit-transform: rotate(90deg);
@@ -125,17 +125,22 @@ body {
 
 .footer {
   height: 55px;
-  background-color: gray; }
+  background-color: #37761D; }
   .footer h5 {
     text-align: center;
     padding-top: 20px;
     color: white; }
     .footer h5 a {
-      color: #F1948A; }
+      color: #f69f8c; }
 
 .scroll-top {
   position: fixed;
-  bottom: 30px;
-  right: 30px; }
-  .scroll-top img {
-    cursor: pointer; }
+  bottom: 25px;
+  right: 20px; }
+
+.comment {
+  position: fixed;
+  bottom: 90px;
+  right: 8px; }
+  .comment a {
+    font-size: 12px; }
