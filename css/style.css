@@ -79,6 +79,9 @@ img {
   .content .top-content span {
     float: left;
     padding-bottom: 5px; }
+    @media (max-width: 768px) {
+      .content .top-content span {
+        display: none; } }
   .content .top-content ul {
     float: left; }
     .content .top-content ul li {
@@ -88,6 +91,9 @@ img {
     text-align: center;
     font-size: 42px;
     letter-spacing: 5px; }
+  @media (max-width: 768px) {
+    .content .chart-content {
+      display: none; } }
   @media (max-width: 568px) {
     .content .chart-content li {
       padding-bottom: 5px;
@@ -141,7 +147,11 @@ img {
 .comment-ico {
   position: fixed;
   bottom: 90px;
-  right: 8px; }
-  .comment-ico span {
-    display: block;
-    font-size: 12px; }
+  right: 15px;
+  text-align: center; }
+  .comment-ico a {
+    display: inline-block; }
+    .comment-ico a span {
+      display: block;
+      font-size: 12px;
+      padding-top: 5px; }

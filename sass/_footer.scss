@@ -20,9 +20,14 @@
 .comment-ico {
 	position: fixed;
 	bottom: 90px;
-	right: 8px;
-	span {
+	right: 15px;
+	text-align: center;
+	a {
+		display: inline-block;
+		span {
 		display: block;
 		font-size: 12px;
-	}	
+		padding-top: 5px;
+		}	
+	}
 }

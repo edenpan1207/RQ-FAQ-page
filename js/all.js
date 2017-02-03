@@ -7,7 +7,7 @@ $(document).ready(function(){
 	contentHide.first().parent().find('img').toggleClass('rotate');
 
 
-   // click h3 to show p section
+   // click h3 to toggle p section
 	var contentToggle = $('.container > ul > li > h3');
    contentToggle.click(function(){
    	$(this).parent().find('p').slideToggle();
@@ -24,19 +24,21 @@ $(document).ready(function(){
         event.preventDefault();
         var connect = $(this).attr('href');
         var position = $(connect).offset().top;
-        $('body').animate({
-            scrollTop: position-80}, 700);
+        $('body').stop().animate({
+            scrollTop: position-80}, 1250, 'easeInOutExpo');
     });
 
     // scroll top button show and hide
-    $('.scroll-top').hide(300);
+
     $(window).scroll(function() {
-        if ($(document).scrollTop() > '300') {
+        if ($(document).scrollTop() > '300' && $(window).width() > 768) {
             $('.scroll-top').show(300);
         } else {
             $('.scroll-top').hide(300);
         }
     });
+
+
 
     // scroll to top click
     $('.scroll-top a').click(function(event) {

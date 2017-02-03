@@ -1,2 +1,6 @@
 $menu-color: #229954;
 $link-color: #f69f8c;
+
+@mixin float-pos {
+	float: left;
+}
