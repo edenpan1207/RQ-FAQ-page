@@ -15,6 +15,9 @@
 	position: fixed;
 	bottom: 25px;
 	right: 20px;
+	@include ipad {
+		display: none;
+	}
 	}
 
 .comment-ico {

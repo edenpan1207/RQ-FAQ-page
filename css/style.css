@@ -143,6 +143,9 @@ img {
   position: fixed;
   bottom: 25px;
   right: 20px; }
+  @media (max-width: 768px) {
+    .scroll-top {
+      display: none; } }
 
 .comment-ico {
   position: fixed;
