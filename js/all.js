@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('.scroll-top').hide();
 
    // hide all the p section except first one
 	var contentHide = $('.container > ul > li > p');
@@ -29,7 +30,7 @@ $(document).ready(function(){
     });
 
     // scroll top button show and hide
-    $('.scroll-top').hide();
+    
     $(window).scroll(function() {
         if ($(document).scrollTop() > '300' && $(window).width() > 768) {
             $('.scroll-top').show(300);
