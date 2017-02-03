@@ -52,6 +52,9 @@
                 &:hover {
                     background-color: rgba(55,118,29,0.1);
                 }
+                @include l-phone {
+                    font-size: 20px;
+                }
     		}
     		p {
                 font-size: 18px;

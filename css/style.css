@@ -116,6 +116,9 @@ img {
         cursor: pointer; }
         .content .menu-content li h3:hover {
           background-color: rgba(55, 118, 29, 0.1); }
+        @media (max-width: 568px) {
+          .content .menu-content li h3 {
+            font-size: 20px; } }
       .content .menu-content li p {
         font-size: 18px;
         background-color: rgba(55, 118, 29, 0.8);
@@ -139,6 +142,23 @@ img {
     .footer h5 a {
       color: #f69f8c; }
 
+.comment-ico {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .comment-ico {
+      border-radius: 10px;
+      padding: 10px;
+      background-color: rgba(55, 118, 29, 0.1); } }
+  .comment-ico a {
+    display: inline-block; }
+    .comment-ico a span {
+      display: block;
+      font-size: 12px;
+      padding-top: 5px; }
+
 .scroll-top {
   position: fixed;
   bottom: 25px;
@@ -146,15 +166,3 @@ img {
   @media (max-width: 768px) {
     .scroll-top {
       display: none; } }
-
-.comment-ico {
-  position: fixed;
-  bottom: 90px;
-  right: 15px;
-  text-align: center; }
-  .comment-ico a {
-    display: inline-block; }
-    .comment-ico a span {
-      display: block;
-      font-size: 12px;
-      padding-top: 5px; }
